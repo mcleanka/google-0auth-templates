@@ -1,12 +1,12 @@
 import React from 'react'
-import './App.css';
 import './assets/css/styles.css';
+import routes from './utils/router';
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 export default function App() {
   return <Router>
     <>
-      <Header />
       <Switch>
         {
           routes.map((route, index) => (

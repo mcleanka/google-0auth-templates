@@ -1,25 +1,31 @@
 import React from "react";
-import Gallery from "../page/Gallery";
-import Home from "../page/Home";
-import Login from "../page/Login";
+import Login from "../pages/Login";
+import ConfirmPassword from "../pages/ConfirmPassword";
+import ForgetPassword from "../pages/ForgetPassword";
+import Identifier from "../pages/Identifier";
+import Register from "../pages/Register";
 
 // eslint-disable-next-line
 export default [
 	{
-		path: '/',
+		path: '/identifier',
 		exact: true,
-		component: () => <Home />,
+		component: () => <Identifier />,
 	},
 	{
-		path: '/identifier',
-		component: () => <Login />,
+		path: '/register',
+		component: () => <Register />,
 	},
 	{
 		path: '/login',
-		component: () => <Gallery />,
+		component: () => <Login />,
 	},
 	{
 		path: '/forget-password',
-		component: () => <Gallery />,
+		component: () => <ForgetPassword />,
+	},
+	{
+		path: '/confirm-password',
+		component: () => <ConfirmPassword />,
 	},
 ];
