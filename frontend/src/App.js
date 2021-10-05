@@ -3,10 +3,11 @@ import './assets/css/styles.css';
 import routes from './utils/router';
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import MainWrapper from './includes/MainWrapper';
 
 export default function App() {
   return <Router>
-    <>
+    <MainWrapper>
       <Switch>
         {
           routes.map((route, index) => (
@@ -19,6 +20,6 @@ export default function App() {
           ))
         }
       </Switch>
-    </>
+    </MainWrapper>
   </Router>;
 }

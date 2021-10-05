@@ -8,7 +8,7 @@ import Register from "../pages/Register";
 // eslint-disable-next-line
 export default [
 	{
-		path: '/identifier',
+		path: '/',
 		exact: true,
 		component: () => <Identifier />,
 	},
