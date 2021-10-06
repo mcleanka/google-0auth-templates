@@ -1,6 +1,6 @@
 import React from 'react'
 
-function MainWrapper() {
+function Header() {
 	return (
 		<div>
 			testing
@@ -8,4 +8,4 @@ function MainWrapper() {
 	)
 }
 
-export default MainWrapper
+export default Header
